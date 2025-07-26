@@ -1,0 +1,82 @@
+Absolutely Harshit — I’d love to help with that! Based on everything you've implemented so far in the **InterviewExcel** frontend, here are **curated frontend interview questions** (beginner to advanced) that reflect your real experience.
+
+---
+
+## 🔥 Topics Covered from Your Project
+
+* Authentication flows
+* Token management
+* Google OAuth integration
+* Role-based route protection (student/expert)
+* React context + hooks
+* Next.js app structure
+* Session refresh logic
+* Secure storage (cookies vs. localStorage)
+* Auto token refresh strategy
+
+---
+
+## 🎯 Frontend Interview Questions (Based on Your Work)
+
+### 🔐 **Authentication & Token Handling**
+
+1. **How do you securely store and manage access tokens on the client?**
+2. **Why did you choose to store the refresh token in an HTTP-only cookie instead of localStorage?**
+3. **Explain how you implemented session auto-refresh in your project.**
+4. **How do you differentiate token-based authentication flows between students and experts?**
+5. **What are the security implications of storing access tokens in localStorage? How did you mitigate them?**
+6. **How would you prevent CSRF and XSS vulnerabilities in your auth implementation?**
+
+---
+
+### ⚛️ **React Context & Hooks**
+
+7. **How does the `AuthProvider` manage and propagate user state throughout your application?**
+8. **Explain the role of `useAuthContext` and how you ensured it was only used within the `AuthProvider`.**
+9. **What happens if a component calls `useAuthContext` outside of the provider?**
+10. **How do you ensure the context updates when a user logs in, logs out, or refreshes a session?**
+
+---
+
+### 🚀 **Next.js App Routing & Layouts**
+
+11. **How did you structure your application to separate student and expert routes using Next.js layouts?**
+12. **Why did you place your `AuthProvider` inside a nested layout rather than the root `_app.tsx`?**
+13. **How do you protect routes and ensure only authenticated users can access them?**
+
+---
+
+### 🔑 **Google OAuth Integration**
+
+14. **How did you integrate Google OAuth with role-based logic (student vs expert)?**
+15. **What libraries did you use for Google login, and how do you handle the ID token on the client and server?**
+16. **Why is the GoogleOAuthProvider placed inside the layout?**
+
+---
+
+### 🧠 **Design & Architecture**
+
+17. **How did you structure your token refresh logic to minimize latency and avoid token expiry?**
+18. **Why did you subtract 20 seconds from the token expiry time before refreshing it?**
+19. **What’s your approach to error handling in fetch/post hooks when the token is invalid or expired?**
+20. **What’s the benefit of a shared `post()` utility versus writing raw `fetch()` calls?**
+
+---
+
+### 🧪 Bonus: Edge Case + Debug Scenarios
+
+21. **What happens if the refresh token is expired or missing in a client-only context?**
+22. **How would you handle a race condition where multiple tabs try to refresh a session at once?**
+23. **What’s a common mistake when dealing with SSR + authentication in Next.js, and how did you avoid it?**
+
+---
+
+## 📦 Suggested Format for Resume / Interview
+
+If you're asked in an interview about your experience, say:
+
+> “In my latest project *InterviewExcel*, I implemented a full auth system with access + refresh tokens, auto-refresh using `setTimeout`, Google OAuth with role-based logic, and secure route protection using Next.js layouts and React Context.”
+
+---
+
+Let me know if you'd like these as a printable sheet or want **backend-side questions** based on this too!
